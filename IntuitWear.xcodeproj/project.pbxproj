@@ -13,6 +13,18 @@
 		3A41F64A1AA7D90E00227100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A41F6491AA7D90E00227100 /* Images.xcassets */; };
 		3A41F64D1AA7D90E00227100 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41F64B1AA7D90E00227100 /* LaunchScreen.xib */; };
 		3A41F6591AA7D90F00227100 /* IntuitWearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41F6581AA7D90F00227100 /* IntuitWearTests.swift */; };
+		3A41F66C1AA7D91D00227100 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41F66B1AA7D91D00227100 /* InterfaceController.swift */; };
+		3A41F66E1AA7D91D00227100 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41F66D1AA7D91D00227100 /* NotificationController.swift */; };
+		3A41F6701AA7D91D00227100 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41F66F1AA7D91D00227100 /* GlanceController.swift */; };
+		3A41F6721AA7D91D00227100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A41F6711AA7D91D00227100 /* Images.xcassets */; };
+		3A41F6761AA7D91D00227100 /* IntuitWear WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 3A41F6751AA7D91D00227100 /* IntuitWear WatchKit App.app */; };
+		3A41F67E1AA7D91D00227100 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A41F67C1AA7D91D00227100 /* Interface.storyboard */; };
+		3A41F6801AA7D91D00227100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A41F67F1AA7D91D00227100 /* Images.xcassets */; };
+		3A41F6831AA7D91D00227100 /* IntuitWear WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A41F6661AA7D91D00227100 /* IntuitWear WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A41F68C1AA7D96900227100 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41F68B1AA7D96900227100 /* PageController.swift */; };
+		3A41F68F1AA7DBEF00227100 /* IntuitWearKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A41F68E1AA7DBEF00227100 /* IntuitWearKit.framework */; };
+		3A41F6901AA7DBEF00227100 /* IntuitWearKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A41F68E1AA7DBEF00227100 /* IntuitWearKit.framework */; };
+		3A7F38E61AA7DF71003DBD16 /* IntuitWearKit.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A41F68E1AA7DBEF00227100 /* IntuitWearKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +35,36 @@
 			remoteGlobalIDString = 3A41F63C1AA7D90E00227100;
 			remoteInfo = IntuitWear;
 		};
+		3A41F6771AA7D91D00227100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A41F6351AA7D90E00227100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A41F6741AA7D91D00227100;
+			remoteInfo = "IntuitWear WatchKit App";
+		};
+		3A41F6811AA7D91D00227100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A41F6351AA7D90E00227100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A41F6651AA7D91D00227100;
+			remoteInfo = "IntuitWear WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A41F68A1AA7D91D00227100 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A7F38E61AA7DF71003DBD16 /* IntuitWearKit.framework in Embed App Extensions */,
+				3A41F6831AA7D91D00227100 /* IntuitWear WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A41F63D1AA7D90E00227100 /* IntuitWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntuitWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +77,19 @@
 		3A41F6521AA7D90F00227100 /* IntuitWearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntuitWearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A41F6571AA7D90F00227100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A41F6581AA7D90F00227100 /* IntuitWearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntuitWearTests.swift; sourceTree = "<group>"; };
+		3A41F6661AA7D91D00227100 /* IntuitWear WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IntuitWear WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A41F6691AA7D91D00227100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A41F66A1AA7D91D00227100 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3A41F66B1AA7D91D00227100 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3A41F66D1AA7D91D00227100 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3A41F66F1AA7D91D00227100 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		3A41F6711AA7D91D00227100 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A41F6751AA7D91D00227100 /* IntuitWear WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IntuitWear WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A41F67B1AA7D91D00227100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A41F67D1AA7D91D00227100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3A41F67F1AA7D91D00227100 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A41F68B1AA7D96900227100 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		3A41F68E1AA7DBEF00227100 /* IntuitWearKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IntuitWearKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A41F68F1AA7DBEF00227100 /* IntuitWearKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,14 +108,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A41F6631AA7D91D00227100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A41F6901AA7DBEF00227100 /* IntuitWearKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3A41F6341AA7D90E00227100 = {
 			isa = PBXGroup;
 			children = (
+				3A41F68D1AA7DBA900227100 /* Frameworks */,
 				3A41F63F1AA7D90E00227100 /* IntuitWear */,
 				3A41F6551AA7D90F00227100 /* IntuitWearTests */,
+				3A41F6671AA7D91D00227100 /* IntuitWear WatchKit Extension */,
+				3A41F6791AA7D91D00227100 /* IntuitWear WatchKit App */,
 				3A41F63E1AA7D90E00227100 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +136,8 @@
 			children = (
 				3A41F63D1AA7D90E00227100 /* IntuitWear.app */,
 				3A41F6521AA7D90F00227100 /* IntuitWearTests.xctest */,
+				3A41F6661AA7D91D00227100 /* IntuitWear WatchKit Extension.appex */,
+				3A41F6751AA7D91D00227100 /* IntuitWear WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +180,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3A41F6671AA7D91D00227100 /* IntuitWear WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A41F66B1AA7D91D00227100 /* InterfaceController.swift */,
+				3A41F66D1AA7D91D00227100 /* NotificationController.swift */,
+				3A41F66F1AA7D91D00227100 /* GlanceController.swift */,
+				3A41F68B1AA7D96900227100 /* PageController.swift */,
+				3A41F6711AA7D91D00227100 /* Images.xcassets */,
+				3A41F6681AA7D91D00227100 /* Supporting Files */,
+			);
+			path = "IntuitWear WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3A41F6681AA7D91D00227100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A41F6691AA7D91D00227100 /* Info.plist */,
+				3A41F66A1AA7D91D00227100 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A41F6791AA7D91D00227100 /* IntuitWear WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3A41F67C1AA7D91D00227100 /* Interface.storyboard */,
+				3A41F67F1AA7D91D00227100 /* Images.xcassets */,
+				3A41F67A1AA7D91D00227100 /* Supporting Files */,
+			);
+			path = "IntuitWear WatchKit App";
+			sourceTree = "<group>";
+		};
+		3A41F67A1AA7D91D00227100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A41F67B1AA7D91D00227100 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A41F68D1AA7DBA900227100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A41F68E1AA7DBEF00227100 /* IntuitWearKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +238,12 @@
 				3A41F6391AA7D90E00227100 /* Sources */,
 				3A41F63A1AA7D90E00227100 /* Frameworks */,
 				3A41F63B1AA7D90E00227100 /* Resources */,
+				3A41F68A1AA7D91D00227100 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3A41F6821AA7D91D00227100 /* PBXTargetDependency */,
 			);
 			name = IntuitWear;
 			productName = IntuitWear;
@@ -150,6 +268,39 @@
 			productReference = 3A41F6521AA7D90F00227100 /* IntuitWearTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3A41F6651AA7D91D00227100 /* IntuitWear WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A41F6871AA7D91D00227100 /* Build configuration list for PBXNativeTarget "IntuitWear WatchKit Extension" */;
+			buildPhases = (
+				3A41F6621AA7D91D00227100 /* Sources */,
+				3A41F6631AA7D91D00227100 /* Frameworks */,
+				3A41F6641AA7D91D00227100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A41F6781AA7D91D00227100 /* PBXTargetDependency */,
+			);
+			name = "IntuitWear WatchKit Extension";
+			productName = "IntuitWear WatchKit Extension";
+			productReference = 3A41F6661AA7D91D00227100 /* IntuitWear WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		3A41F6741AA7D91D00227100 /* IntuitWear WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A41F6841AA7D91D00227100 /* Build configuration list for PBXNativeTarget "IntuitWear WatchKit App" */;
+			buildPhases = (
+				3A41F6731AA7D91D00227100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IntuitWear WatchKit App";
+			productName = "IntuitWear WatchKit App";
+			productReference = 3A41F6751AA7D91D00227100 /* IntuitWear WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +316,12 @@
 					3A41F6511AA7D90F00227100 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 3A41F63C1AA7D90E00227100;
+					};
+					3A41F6651AA7D91D00227100 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					3A41F6741AA7D91D00227100 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -183,6 +340,8 @@
 			targets = (
 				3A41F63C1AA7D90E00227100 /* IntuitWear */,
 				3A41F6511AA7D90F00227100 /* IntuitWearTests */,
+				3A41F6651AA7D91D00227100 /* IntuitWear WatchKit Extension */,
+				3A41F6741AA7D91D00227100 /* IntuitWear WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +361,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A41F6641AA7D91D00227100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A41F6761AA7D91D00227100 /* IntuitWear WatchKit App.app in Resources */,
+				3A41F6721AA7D91D00227100 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A41F6731AA7D91D00227100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A41F67E1AA7D91D00227100 /* Interface.storyboard in Resources */,
+				3A41F6801AA7D91D00227100 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +402,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A41F6621AA7D91D00227100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A41F68C1AA7D96900227100 /* PageController.swift in Sources */,
+				3A41F66E1AA7D91D00227100 /* NotificationController.swift in Sources */,
+				3A41F66C1AA7D91D00227100 /* InterfaceController.swift in Sources */,
+				3A41F6701AA7D91D00227100 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +420,16 @@
 			isa = PBXTargetDependency;
 			target = 3A41F63C1AA7D90E00227100 /* IntuitWear */;
 			targetProxy = 3A41F6531AA7D90F00227100 /* PBXContainerItemProxy */;
+		};
+		3A41F6781AA7D91D00227100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A41F6741AA7D91D00227100 /* IntuitWear WatchKit App */;
+			targetProxy = 3A41F6771AA7D91D00227100 /* PBXContainerItemProxy */;
+		};
+		3A41F6821AA7D91D00227100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A41F6651AA7D91D00227100 /* IntuitWear WatchKit Extension */;
+			targetProxy = 3A41F6811AA7D91D00227100 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +448,14 @@
 				3A41F64C1AA7D90E00227100 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3A41F67C1AA7D91D00227100 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A41F67D1AA7D91D00227100 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +548,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IntuitWear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +563,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IntuitWear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -392,6 +608,68 @@
 			};
 			name = Release;
 		};
+		3A41F6851AA7D91D00227100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = IntuitWear_WatchKit_Extension;
+				INFOPLIST_FILE = "IntuitWear WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		3A41F6861AA7D91D00227100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = IntuitWear_WatchKit_Extension;
+				INFOPLIST_FILE = "IntuitWear WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		3A41F6881AA7D91D00227100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IntuitWear WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3A41F6891AA7D91D00227100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "IntuitWear WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +689,7 @@
 				3A41F65E1AA7D90F00227100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A41F65F1AA7D90F00227100 /* Build configuration list for PBXNativeTarget "IntuitWearTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +698,25 @@
 				3A41F6611AA7D90F00227100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A41F6841AA7D91D00227100 /* Build configuration list for PBXNativeTarget "IntuitWear WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A41F6851AA7D91D00227100 /* Debug */,
+				3A41F6861AA7D91D00227100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A41F6871AA7D91D00227100 /* Build configuration list for PBXNativeTarget "IntuitWear WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A41F6881AA7D91D00227100 /* Debug */,
+				3A41F6891AA7D91D00227100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
